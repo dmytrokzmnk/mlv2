@@ -1,0 +1,323 @@
+.container {
+    width: 100%;
+    position: relative;
+    padding:0 20% ;
+    margin-bottom: 4rem;
+}
+
+.wrapContent {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+    padding-bottom: 1rem;
+    position: relative;
+    z-index: 1;
+}
+
+.button {
+    padding: 12px 40px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-size: 1.3rem;
+    border-radius: 8px;
+    user-select: none;
+    font-family: Montserrat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button p {
+    margin: 0;
+}
+
+
+.wrapTitle {
+    position: absolute;
+    z-index: 2;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.title {
+    position: relative;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 8.4vw;
+    line-height: 78px;
+    text-align: center;
+    letter-spacing: -0.06em;
+    color: #000000;
+    transform: translateY(0);
+    opacity: 1;
+    transition: opacity 0.16s linear, transform 0.3s linear;
+}
+
+.wrapDecoration1{
+    position: absolute;
+    width: 90%;
+ height: 78px;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -100 
+}
+
+.wrapDecoration2 {
+    position: absolute;
+    width: 90%;
+  height: 78px;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -100 ;
+}
+.wrapDecoration1::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 1px;
+    background: #000000;
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    transform: translateX(0);
+    opacity: 1;
+    transition: opacity 0.16s linear, transform 0.3s linear;
+    transition-delay:0.1s;
+
+
+}
+
+.wrapDecoration1::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 1px;
+    background: #000000;
+    display: block;
+    top: 0;
+    right: 0;
+    right: 0;
+    z-index: -1;
+    transform: translateX(0);
+    opacity: 1;
+    transition: opacity 0.16s linear, transform 0.3s linear;
+    transition-delay:0.1s;
+
+}
+
+
+
+.wrapDecoration2::after {
+    content: "";
+    position: absolute;
+    z-index: -1 ;
+    width: 50%;
+    height: 1px;
+    background: #000000;
+    display: block;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: translateX(0);
+    opacity: 1;
+    transition: opacity 0.16s linear, transform 0.3s linear;
+    transition-delay:0.1s;
+
+}
+
+.wrapDecoration2::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 1px;
+    background: #000000;
+    display: block;
+    bottom: 0;
+    right: 0;
+    right: 0;
+    z-index: -1;
+    transform: translateX(0);
+    opacity: 1;
+    transition: opacity 0.16s linear, transform 0.3s linear;
+    transition-delay:0.1s;
+}
+@media only screen and (min-width: 767px) {
+    .container {
+        width: 46%;
+        padding:0 10%;
+    }
+    
+.title {
+
+    font-size: 4.6vw;
+
+}
+}
+
+@media only screen and (min-width: 1199px) {
+    .container {
+        width: 38%;
+        padding:0 10%;
+    }
+    .button{
+        padding: 12px 48px;
+        font-size: 1.6rem;
+        }
+    .title {
+
+        font-size: 4vw;
+        transform: translateY(80%);
+        opacity: 0;
+    }
+    .wrapDecoration1{
+        position: absolute;
+        width: 100%;
+        height: 78px;
+        top: 30%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -100 
+    }
+    .wrapDecoration2 {
+        position: absolute;
+        width: 100%;
+        height: 78px;
+        top: 30%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -100 
+    }
+    
+    .wrapDecoration1::after {
+        content: "";
+        position: absolute;
+        width: 50%;
+        height: 1px;
+        background: #000000;
+        display: block;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        transform: translateX(50%);
+    
+        opacity: 0;
+        transition: opacity 0.16s linear, transform 0.3s linear;
+        transition-delay:0.1s;
+    
+    
+    }
+    
+    .wrapDecoration1::before {
+        content: "";
+        position: absolute;
+        width: 50%;
+        height: 1px;
+        background: #000000;
+        display: block;
+        top: 0;
+        right: 0;
+        right: 0;
+        z-index: -1;
+        transform: translateX(-50%);
+        opacity: 0;
+        transition: opacity 0.16s linear, transform 0.3s linear;
+        transition-delay:0.1s;
+    
+    }
+    
+
+    .wrapDecoration2::after {
+        content: "";
+        position: absolute;
+        z-index: -1 ;
+        width: 50%;
+        height: 1px;
+        background: #000000;
+        display: block;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        transform: translateX(50%);
+    
+        opacity: 0;
+        transition: opacity 0.16s linear, transform 0.3s linear;
+        transition-delay:0.1s;
+    
+    }
+    
+    .wrapDecoration2::before {
+        content: "";
+        position: absolute;
+        width: 50%;
+        height: 1px;
+        background: #000000;
+        display: block;
+        bottom: 0;
+        right: 0;
+        right: 0;
+        z-index: -1;
+        transform: translateX(-50%);
+        opacity: 0;
+        transition: opacity 0.16s linear, transform 0.3s linear;
+        transition-delay:0.1s;
+    }
+    
+    .wrapContent:hover .title {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    .wrapContent:hover .wrapDecoration1::before {
+        transform: translateX(0);
+        opacity: 1;
+        transition: opacity 0.16s linear, transform 0.3s linear;
+        transition-delay:0.1s;
+    
+    }
+    
+    .wrapContent:hover .wrapDecoration1::after {
+        transform: translateX(0);
+        opacity: 1;
+        transition: opacity 0.16s linear, transform 0.3s linear;
+        transition-delay:0.1s;
+      
+    }
+    
+    
+    .wrapContent:hover .wrapDecoration2::before {
+        transform: translateX(0);
+        opacity: 1;
+        transition: opacity 0.16s linear, transform 0.3s linear;
+        transition-delay:0.1s;
+    
+    
+    
+    }
+    
+    .wrapContent:hover .wrapDecoration2::after {
+        transform: translateX(0);
+        opacity: 1;
+        transition: opacity 0.16s linear, transform 0.3s linear;
+        transition-delay:0.1s;
+    
+    
+    
+    }
+}
+

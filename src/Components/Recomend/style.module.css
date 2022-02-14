@@ -1,0 +1,39 @@
+.section{
+    /* min-height: 100vh; */
+    padding: 10vh 1.4rem 0 1.4rem;
+
+}
+
+.title{
+    font-weight: 600;
+    /* font-size: 96px;
+    line-height: 117px; */
+    letter-spacing: -0.06em;
+    color: #000000;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 8vw;
+    padding-bottom: 4rem;
+}
+
+.wrapCard{
+
+}
+
+@media only screen and (min-width: 767px) {
+
+    .wrapCard{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+
+@media only screen and (min-width: 1199px) {
+    .title{
+        font-weight: 500;
+        font-size: 7vw;
+    }
+}
+
