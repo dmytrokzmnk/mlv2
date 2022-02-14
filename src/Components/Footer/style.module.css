@@ -75,20 +75,11 @@
     position: relative;
 }
 
-.titleLast::before {
-    content: "";
-    width: 20%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    right: -30%;
-    background-color: #FDF9F2;
 
-}
 
 .title::after {
     content: "";
-    width: 235%;
+    width: 220%;
     height: 1px;
     position: absolute;
     bottom: 1.5rem;
@@ -101,17 +92,13 @@
 
 @media only screen and (min-width: 767px) {
     .title::after {
-        width: 274%;
-    }
 
-    .titleLast::before {
-        width: 20%;
-        right: -50%;
-    
+        width: 260%;
+
     }
 }
 
-/* @media only screen and (min-width: 840px) {
+@media only screen and (min-width: 840px) {
     .title::after {
         width: 270%;
     }
@@ -120,7 +107,7 @@
     .title::after {
         width: 286%;
     }
-} */
+}
 
 
 @media only screen and (min-width: 1199px) {
@@ -132,10 +119,7 @@
     .title::after {
         width: 200%;
     }
-    .titleLast::before {
-    display: none;
-    
-    }
+
     .titleLast:after {
         content: "";
         width: 100%;
