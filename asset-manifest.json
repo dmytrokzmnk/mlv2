@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/mrlv2/static/css/main.46fec3f4.css",
+    "main.js": "/mrlv2/static/js/main.cee7efe8.js",
+    "static/media/photo2.png": "/mrlv2/static/media/photo2.44392e8d4d38f933f7c2.png",
+    "static/media/fb2.png": "/mrlv2/static/media/fb2.0d9c08cd2c34010b76c3.png",
+    "static/media/cart4.png": "/mrlv2/static/media/cart4.c61464ac6c24e095e1bf.png",
+    "static/media/fb3.png": "/mrlv2/static/media/fb3.2fb1892f2477b1bc280d.png",
+    "static/media/fb1.png": "/mrlv2/static/media/fb1.a638792ec034a993bba6.png",
+    "static/media/fb4.png": "/mrlv2/static/media/fb4.3d48e101a4be5f78dadc.png",
+    "static/media/red.png": "/mrlv2/static/media/red.10e1297a9121ab8edb60.png",
+    "static/media/shrimp.png": "/mrlv2/static/media/shrimp.8c58e38f009bb59d7b40.png",
+    "static/media/squid1.png": "/mrlv2/static/media/squid1.315168543b57ca012961.png",
+    "static/media/novus.svg": "/mrlv2/static/media/novus.6e303b106913c764b0baa8e7a71ca03d.svg",
+    "static/media/Silpo.svg": "/mrlv2/static/media/Silpo.0fbc63e33735a85950590909887db90b.svg",
+    "static/media/Auchan.svg": "/mrlv2/static/media/Auchan.8bf63b5e5b205c2f6360ff04012dab9f.svg",
+    "static/media/metro.svg": "/mrlv2/static/media/metro.81ba0f5f69ebd12a27cdc063974a41ab.svg",
+    "index.html": "/mrlv2/index.html",
+    "main.46fec3f4.css.map": "/mrlv2/static/css/main.46fec3f4.css.map",
+    "main.cee7efe8.js.map": "/mrlv2/static/js/main.cee7efe8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.46fec3f4.css",
+    "static/js/main.cee7efe8.js"
+  ]
+}
