@@ -1,0 +1,79 @@
+.container{
+    padding: 0 1.4rem;
+    padding-top: 10vh;
+}
+
+.image{
+    max-width: 100%;
+    height: auto;
+    mix-blend-mode: multiply;
+
+}
+
+.title{
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+.text{
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+}
+
+.certificate{
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding-bottom: 1rem;
+}
+
+.tthItem{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.tthItem span{
+    font-weight: normal;
+}
+
+@media only screen and (min-width: 767px) {
+    .container{
+        padding: 0 3rem;
+        padding-top: 10vh;
+    }
+    
+}
+
+@media only screen and (min-width: 1119px) {
+    .container{
+        padding: 0 6rem;
+        padding-top: 10vh;
+        display: grid;
+        grid-template-columns: 40% 60%;
+    }
+    .wrapContent{
+        width: 100vw;
+    }
+    .image{
+        grid-column-start: 1;
+    }
+    .wrapContent{
+        grid-column-start: 2;
+        width: 100%;
+        padding-left: 5%;
+    }
+    .title{
+        padding: 0 0 1rem 0;
+        font-size: 3rem;
+    }
+    .text{
+        font-size: 1.4rem;
+
+    }
+    
+    .certificate{
+        font-size: 1.8rem;
+
+    }
+    
+    .tthItem{
+        font-size: 1.4rem;
+    }
+}

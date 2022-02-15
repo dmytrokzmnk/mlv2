@@ -11,11 +11,13 @@ import testPic3 from "./images/red.png";
 import Recomend from "./Components/Recomend/index";
 import Partners from "./Components/Partners";
 import Footer from "./Components/Footer";
+import ListCard from "./Components/ListCard";
+import Product from "./Components/Product";
 function App() {
   return (
     <>
+      <Header></Header>
       <div className={style.wrapper}>
-        <Header></Header>
         <h1 className={style.title}>Fresh seafood</h1>
         <div className={style.slider}>
           <div className={style.sliderTrack}>
@@ -79,8 +81,12 @@ function App() {
         />
         <Recomend></Recomend>
         <Partners></Partners>
-        <Footer></Footer>
       </main>
+      <Footer></Footer>
+      {/* <Header></Header> */}
+      {/* <ListCard></ListCard> */}
+      {/* <Product></Product> */}
+      {/* <Footer></Footer> */}
     </>
   );
 }
