@@ -25,9 +25,31 @@ const Header = () => {
           </label>
         </div>
       </header>
-      <div
-        className={open ? [styles.menu, styles.active].join(" ") : styles.menu}
-      ></div>
+      <div>
+        <div
+          className={
+            open ? [styles.overlay, styles.active].join(" ") : styles.overlay
+          }
+        ></div>
+        <div
+          className={
+            open ? [styles.menu, styles.active].join(" ") : styles.menu
+          }
+        >
+          <ul
+            className={
+              open ? [styles.list, styles.active].join(" ") : styles.list
+            }
+          >
+            <li className={styles.item}>Головна</li>
+            <li className={styles.item}>Про нас</li>
+            <li className={styles.item}>Морьскі делікатеси</li>
+            <li className={styles.item}>Чорна ікра</li>
+            <li className={styles.item}>Червона ікра</li>
+            <li className={styles.item}>Для бізнесу</li>
+          </ul>
+        </div>
+      </div>
     </>
   );
 };

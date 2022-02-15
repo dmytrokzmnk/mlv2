@@ -89,24 +89,54 @@ label div:nth-child(2) {
     transform: rotateZ(-45deg);
 }
 
-/* .menu {
-    width: 50%;
+.menu {
+    width: 100%;
     height: 100vh;
-    transform: translateX(150%);
-    z-index: 2;
-    transition: transform 0.2s ease-in-out;
-    position: absolute;
+    transform: translateX(100%);
+    z-index: 5;
+    transition: all 0.2s ease-in-out;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .menu.active {
-    transform: translateX(100%);
-    position: fixed;
-    background-color: rgb(26, 110, 0);
-    z-index: 2;
-    transition: transform 0.2s ease-in-out;
-} */
+    transform: translateX(0%);
+    background-color: #FDF9F2;
+    transition: all 0.2s ease-in-out;
 
+}
 
+.list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    /* transition: all 0.8s ease-in-out; */
+
+}
+.list.active{
+    opacity: 1;
+    transition: all 0.8s ease-in-out;
+
+}
+.item{
+    font-size: 1.6rem;
+    line-height: 2;
+    font-weight: 600;
+    letter-spacing: -0.6;
+    text-transform: uppercase;
+}
+
+.item:hover{
+   text-decoration:underline;
+   
+}
 
 
 
@@ -119,6 +149,11 @@ label div:nth-child(2) {
     .link {
         font-size: 2.2rem;
     }
+    .item{
+        font-size: 2rem;
+        line-height: 2;
+
+    }
 }
 
 @media only screen and (min-width: 1199px) {
@@ -128,5 +163,22 @@ label div:nth-child(2) {
 
     .link {
         font-size: 2.2rem;
+    }
+
+    .menu {
+        width: 50%;
+        transform: translateX(150%);
+    }
+    
+    .menu.active {
+        transform: translateX(100%);
+    }
+
+    .overlay.active{
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        z-index: 1;
+        background-color: rgba(0, 0, 0, 0.445);
     }
 }
