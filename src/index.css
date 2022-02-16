@@ -10,6 +10,7 @@ body {
   -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: transparent;
   overflow-x: hidden;
+  /* scroll-behavior: smooth; */
 }
 h1,h2,h3,h3,h5,p{
   margin: 0;
@@ -28,3 +29,9 @@ img, svg {
   vertical-align: middle;
 }
 
+a{
+  text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
+}

@@ -1,8 +1,10 @@
 import styles from "./styles.module.css";
 import { useState } from "react";
+import { Link } from "react-router-dom";
+
 const Header = () => {
   const [open, isOpen] = useState(false);
-  console.log(open);
+
   return (
     <>
       <header className={styles.header}>
@@ -41,12 +43,24 @@ const Header = () => {
               open ? [styles.list, styles.active].join(" ") : styles.list
             }
           >
-            <li className={styles.item}>Головна</li>
-            <li className={styles.item}>Про нас</li>
-            <li className={styles.item}>Морьскі делікатеси</li>
-            <li className={styles.item}>Чорна ікра</li>
-            <li className={styles.item}>Червона ікра</li>
-            <li className={styles.item}>Для бізнесу</li>
+            <li className={styles.item} onClick={() => isOpen(!open)}>
+              <Link to="/">Головна</Link>
+            </li>
+            <li className={styles.item} onClick={() => isOpen(!open)}>
+              <Link to="clear">Про нас</Link>
+            </li>
+            <li className={styles.item} onClick={() => isOpen(!open)}>
+              <Link to="list">Морьскі делікатеси</Link>
+            </li>
+            <li className={styles.item} onClick={() => isOpen(!open)}>
+              <Link to="list">Чорна ікра</Link>
+            </li>
+            <li className={styles.item} onClick={() => isOpen(!open)}>
+              <Link to="list">Червона ікра</Link>
+            </li>
+            <li className={styles.item} onClick={() => isOpen(!open)}>
+              <Link to="clear">Для бізнесу</Link>
+            </li>
           </ul>
         </div>
       </div>

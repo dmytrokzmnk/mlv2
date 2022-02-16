@@ -1,4 +1,6 @@
 import style from "./style.module.css";
+import { Link } from "react-router-dom";
+
 const Present = ({ alt, src, title, text, section }) => {
   return (
     <section
@@ -38,9 +40,9 @@ const Present = ({ alt, src, title, text, section }) => {
       >
         <h2 className={style.title}>{title}</h2>
         <p className={style.text}>{text}</p>
-        <div className={style.button}>
-          <p>Перейти</p>
-        </div>
+        <Link to="list" className={style.button}>
+          Перейти
+        </Link>
       </article>
     </section>
   );

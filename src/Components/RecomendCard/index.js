@@ -1,4 +1,5 @@
 import style from "./style.module.css";
+import { Link } from "react-router-dom";
 
 const RecomendCard = ({ img, alt, name }) => {
   return (
@@ -11,9 +12,9 @@ const RecomendCard = ({ img, alt, name }) => {
         <div className={style.wrapTitle}>
           <h3 className={style.title}>{name}</h3>
         </div>
-        <div className={style.button}>
-          <p>Деталі</p>
-        </div>
+        <Link to="product" className={style.button}>
+          Деталі
+        </Link>
       </div>
     </div>
   );
